@@ -1,0 +1,31 @@
+img {
+    width: 500px;
+    border: 5px solid black;
+    padding: 1em;
+    padding-bottom: 2em;
+    margin: 0.5em;
+}
+
+/* TODO: explain the cascade */
+/* 
+li {
+    color: red;
+} */
+
+h6 {
+    font-size: 2em;
+    margin: 0;
+}
+
+#unordered {
+    color: green;
+}
+
+.special {
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+.bold {
+    font-weight: 900;
+}
