@@ -6,6 +6,9 @@
         <title>HTML Lesson 1</title>
         <style>
             /* You can put CSS here, but generally don't! */
+            img {
+                width: 200px !important;
+            }
         </style>
         <link rel="stylesheet" href="styles/style.css" />
     </head>
@@ -14,6 +17,10 @@
         <h1 id="title">header 1</h1>
         <h2>header 2</h2>
         <h6>header 6</h6>
+
+        <div>
+            This is a div with a <span class="blue bold">span</span> inside it
+        </div>
 
         <p>Paragraph tags are for blocks of text.</p>
 
@@ -34,24 +41,32 @@
         <li>li with no context</li>
         <li>li with no context</li>
 
-        <a href="https://github.com/uprighted-learners/ptsb-jun-2024/">
-            This is link
-        </a>
+        <!-- <img
+            src="https://upload.wikimedia.org/wikipedia/commons/1/12/Grand_Canyon_South_Rim_at_Sunset.jpg"
+            alt="Grand Canyon South Rim at Sunset"
+        /> -->
 
-        <!-- TODO: explain block vs inline -->
-        <span></span>
-        <div></div>
-
+        <!-- This one has inline styles, which we generally avoid! -->
         <img
             src="https://upload.wikimedia.org/wikipedia/commons/1/12/Grand_Canyon_South_Rim_at_Sunset.jpg"
             alt="Grand Canyon South Rim at Sunset"
         />
+        <!-- style="width: 300px; border: 5px solid black" -->
+        <a href="https://github.com/uprighted-learners/ptsb-jun-2024/">
+            This is link
+        </a>
+        <a href="https://github.com/uprighted-learners/ptsb-jun-2024/">
+            This is link
+        </a>
+        <a href="https://github.com/uprighted-learners/ptsb-jun-2024/">
+            This is link
+        </a>
+        <a href="https://github.com/uprighted-learners/ptsb-jun-2024/">
+            This is link
+        </a>
 
-        <!-- This one has inline styles, which we generally avoid! -->
-        <!-- <img
-            src="https://upload.wikimedia.org/wikipedia/commons/1/12/Grand_Canyon_South_Rim_at_Sunset.jpg"
-            alt="Grand Canyon South Rim at Sunset"
-            style="width: 500px; border: 5px solid black"
-        /> -->
+        <button>Button 1</button>
+
+        <input type="button" value="Button 2" />
     </body>
 </html>

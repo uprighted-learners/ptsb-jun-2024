@@ -1,0 +1,4 @@
+/* These styles will override other styles, if they are linked AFTER the other stylesheet */
+a {
+    display: inline;
+}
