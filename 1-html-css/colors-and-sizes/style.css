@@ -1,0 +1,61 @@
+/* em is a measurement based on the size of the em dash
+    – em dash */
+
+/* em is relative to the font size of the container */
+/* rem is relative to the root element's size */
+/* em is more flexible, but also easier to screw up or get confused */
+
+/* 
+vh - percentage of viewport height
+vw - percentage of viewport width
+% - percentage of the parent's size value
+px - pixels, only use them for very small things like borders
+*/
+
+body {
+    margin: 0;
+}
+
+#wrapper {
+    background-color: #f7dba7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    /* height: 100vh; */
+    width: 95vw;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: #f1ab86;
+    border: 5px solid rgb(65, 64, 102);
+}
+
+#two {
+    height: 10em;
+}
+
+#three {
+    font-size: 3em;
+    height: 5em;
+    width: 7rem;
+}
+
+/* Responsive Design - Media Queries*/
+
+@media screen and (min-width: 720px) {
+    #wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 75vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #wrapper {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
