@@ -14,3 +14,6 @@ const students = [
     "Urmi",
     "Paulo",
 ]
+
+let index = Math.floor(Math.random() * students.length)
+console.log(students[index])
