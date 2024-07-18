@@ -81,5 +81,5 @@ const ricardosHouse2 = {
 };
 
 // console.log("I kidnapped", penny); // this one doesn't work after penny is moved inside the house
-console.log("I kinapped", ricardosHouse()); // now I have to access the house before I can get penny
+console.log("I kidnapped", ricardosHouse()); // now I have to access the house before I can get Penny
 console.log("I kidnapped", ricardosHouse2.dog); // when we say "encapsulate" we usually mean in objects or classes
