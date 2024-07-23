@@ -32,3 +32,7 @@ const opacityButton = document.getElementById("opacity-button");
 opacityButton.addEventListener("click", () =>
   box.classList.toggle("transparent")
 );
+
+box.addEventListener("mouseenter", () => {
+  box.classList.toggle("blue");
+});
