@@ -14,6 +14,8 @@
     * take a callback, the callback runs when the event happens
 */
 
+let redStatus = false;
+
 // goal: make button turn the box red
 // select the box
 // select the button
@@ -24,6 +26,7 @@ const redButton = document.getElementById("red-button");
 
 redButton.addEventListener("click", () => {
   box.classList.toggle("red");
+  redStatus = !redStatus;
 });
 
 // goal: add opacity button
@@ -34,11 +37,20 @@ opacityButton.addEventListener("click", () =>
 );
 
 box.addEventListener("mouseenter", () => {
-  box.classList.toggle("blue");
-  box.classList.remove("red");
   // if blue is turning on:
   //    if red is on, remove it
   //    if red is off, leave it
   // if blue is turning off:
   //    set red back to how it was before
+  if (!box.classList.contains("blue")) {
+    box.classList.add("blue");
+    box.classList.remove("red");
+  } else {
+    box.classList.remove("blue");
+    if (redStatus) {
+      box.classList.add("red");
+    } else {
+      box.classList.remove("red");
+    }
+  }
 });
