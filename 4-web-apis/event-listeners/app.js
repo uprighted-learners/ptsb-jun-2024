@@ -23,5 +23,5 @@ const box = document.getElementById("box");
 const button = document.getElementById("red-button");
 
 button.addEventListener("click", () => {
-  box.classList.add("red");
+  box.classList.toggle("red");
 });
