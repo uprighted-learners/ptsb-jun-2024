@@ -18,3 +18,10 @@
 // select the box
 // select the button
 // add event listener to button
+
+const box = document.getElementById("box");
+const button = document.getElementById("red-button");
+
+button.addEventListener("click", () => {
+  box.classList.add("red");
+});
