@@ -20,8 +20,15 @@
 // add event listener to button
 
 const box = document.getElementById("box");
-const button = document.getElementById("red-button");
+const redButton = document.getElementById("red-button");
 
-button.addEventListener("click", () => {
+redButton.addEventListener("click", () => {
   box.classList.toggle("red");
 });
+
+// goal: add opacity button
+const opacityButton = document.getElementById("opacity-button");
+
+opacityButton.addEventListener("click", () =>
+  box.classList.toggle("transparent")
+);

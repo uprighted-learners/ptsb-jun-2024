@@ -7,3 +7,7 @@
 .red {
   background-color: red;
 }
+
+.transparent {
+  opacity: 50%;
+}
