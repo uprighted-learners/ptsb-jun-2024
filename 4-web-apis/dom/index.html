@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to the DOM</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- if you want to include this here, you have to use the defer keyword  -->
+    <script src="app.js" defer></script>
+    <script>
+      // in the real world, we don't do this
+      console.log("hello from the html head");
+      let s1 = "any valid";
+      let s2 = "javascript runs here";
+      console.log(s1 + " " + s2);
+    </script>
+  </head>
+  <body>
+    <ul id="topic-list">
+      <li class="topic">HTML</li>
+      <li class="topic">CSS</li>
+      <li class="topic fave">JavaScript</li>
+    </ul>
+
+    <!-- <script src="app.js"></script> -->
+    <script>
+      console.log("hello from the html body");
+    </script>
+  </body>
+</html>
