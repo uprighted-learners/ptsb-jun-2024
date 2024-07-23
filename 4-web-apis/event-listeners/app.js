@@ -35,4 +35,10 @@ opacityButton.addEventListener("click", () =>
 
 box.addEventListener("mouseenter", () => {
   box.classList.toggle("blue");
+  box.classList.remove("red");
+  // if blue is turning on:
+  //    if red is on, remove it
+  //    if red is off, leave it
+  // if blue is turning off:
+  //    set red back to how it was before
 });
