@@ -4,16 +4,32 @@
 // select the klezmer count
 // increment klezmer count (this happens in the event listener)
 
-// all query selectors together at the top, for tidiness
-
+// goal 2: let people only vote once
+// select the input
+// in the event listeners that already exist...
+// check the name in the input
 const genres = ["klezmer", "alt", "rb", "edm", "jazz", "yodel"];
+const nameInput = document.getElementById("voter-name");
+const warning = document.getElementById("warning");
+let voters = [];
 
 genres.forEach((title) => {
   const button = document.getElementById(`${title}-button`);
   const count = document.getElementById(`${title}-count`);
 
   button.addEventListener("click", () => {
-    let num = Number(count.textContent);
-    count.textContent = num + 1;
+    if (!voters.includes(nameInput.value)) {
+      voters.push(nameInput.value);
+      let num = Number(count.textContent);
+      count.textContent = num + 1;
+
+      // reset input
+      nameInput.value = "";
+      // remove warning
+      warning.classList.add("hidden");
+    } else {
+      warning.classList.remove("hidden");
+    }
+    console.log(voters);
   });
 });
