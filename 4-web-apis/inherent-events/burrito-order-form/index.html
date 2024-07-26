@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burrito Loco</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <form
+      action="https://webhook.site/9026e66f-3344-4b38-8d77-61b7731506ee"
+      method="post"
+      id="form-container"
+    >
+      <!-- radio buttons -->
+      <h4>Beans</h4>
+      <div>
+        <input type="radio" name="beans" id="pinto" value="pinto-beans" />
+        <label for="pinto">Pinto Beans</label>
+      </div>
+      <div>
+        <input type="radio" name="beans" id="black" value="black-beans" />
+        <label for="black">Black Beans</label>
+      </div>
+
+      <h4>Rice</h4>
+      <div>
+        <label for="brown">Brown Rice</label>
+        <input type="radio" name="rice" id="brown" value="brown-rice" />
+      </div>
+      <div>
+        <label for="seasoned">Seasoned Rice</label>
+        <input type="radio" name="rice" id="seasoned" value="seasoned-rice" />
+      </div>
+
+      <!-- Checkboxes -->
+      <h4>Extras</h4>
+      <div>
+        <label for="cheese">Cheese</label>
+        <input type="checkbox" name="cheese" id="cheese" value="cheese" />
+      </div>
+      <div>
+        <label for="crema">Crema</label>
+        <input type="checkbox" name="crema" id="crema" value="crema" />
+      </div>
+      <div>
+        <label for="avocado">Avocado</label>
+        <input type="checkbox" name="avocado" id="avocado" value="avocado" />
+      </div>
+
+      <!-- Text input -->
+      <h4>Delivery Instructions</h4>
+      <div>
+        <textarea name="delivery" id="delivery"></textarea>
+      </div>
+
+      <input type="submit" value="Order Now" id="submit" />
+    </form>
+  </body>
+</html>
