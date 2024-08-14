@@ -13,19 +13,12 @@ app.get("/", (req, res) => {
 })
 
 app.get("/pokemon/hp-filter", (req, res) => {
-  const result = pokeData.filter((p) => {
-    if (req.query["max-hp"] && req.query["min-hp"]) {
-      return (
-        p.hitPoints <= req.query["max-hp"] && p.hitPoints >= req.query["min-hp"]
-      )
-    } else if (req.query["max-hp"]) {
-      return p.hitPoints <= req.query["max-hp"]
-    } else if (req.query["min-hp"]) {
-      return p.hitPoints >= req.query["min-hp"]
-    } else {
-      return false
-    }
-  })
+  const maxHp = req.query["max-hp"] || 100000
+  const minHp = req.query["min-hp"] || 0
+
+  const result = pokeData.filter(
+    (p) => p.hitPoints <= maxHp && p.hitPoints >= minHp
+  )
 
   res.send(result)
 })
