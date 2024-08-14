@@ -1,0 +1,119 @@
+[
+  {
+    "name": "bulbasaur",
+    "hitPoints": 45,
+    "attack": 49,
+    "defense": 49,
+    "description": "For some time after its birth, it grows by gaining nourishment from the seed on its back.",
+    "abilities": ["chlorophyll", "overgrow"],
+    "evolution": {
+      "name": "ivysaur",
+      "level": 16
+    },
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+    "id": 1
+  },
+  {
+    "name": "ivysaur",
+    "hitPoints": 60,
+    "attack": 62,
+    "defense": 63,
+    "description": "When the bud on its back starts swelling, a sweet aroma wafts to indicate the flowers coming bloom.",
+    "abilities": ["chlorophyll", "overgrow"],
+    "evolution": {
+      "name": "venusaur",
+      "level": 32
+    },
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+    "id": 2
+  },
+  {
+    "name": "venusaur",
+    "hitPoints": 80,
+    "attack": 82,
+    "defense": 83,
+    "description": "After a rainy day, the flower on its back smells stronger. The scent attracts other Pokémon.",
+    "abilities": ["chlorophyll", "overgrow"],
+    "evolution": {},
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+    "id": 3
+  },
+  {
+    "name": "charmander",
+    "hitPoints": 39,
+    "attack": 52,
+    "defense": 43,
+    "description": "The fire on the tip of its tail is a measure of its life. If healthy, its tail burns intensely.",
+    "abilities": ["blaze", "solar-power"],
+    "evolution": {
+      "name": "charmeleon",
+      "level": 16
+    },
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+    "id": 4
+  },
+  {
+    "name": "charmeleon",
+    "hitPoints": 58,
+    "attack": 64,
+    "defense": 58,
+    "description": "In the rocky mountains where Charmeleon live, their fiery tails shine at night like stars.",
+    "abilities": ["blaze", "solar-power"],
+    "evolution": {
+      "name": "charizard",
+      "level": 36
+    },
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+    "id": 5
+  },
+  {
+    "name": "charizard",
+    "hitPoints": 58,
+    "attack": 64,
+    "defense": 78,
+    "description": "It is said that Charizards fire burns hotter if it has experienced harsh battles.",
+    "abilities": ["blaze", "solar-power"],
+    "evolution": {},
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+    "id": 6
+  },
+  {
+    "name": "squirtle",
+    "hitPoints": 44,
+    "attack": 48,
+    "defense": 65,
+    "description": "It shelters itself in its shell then strikes back with spouts of water at every opportunity.",
+    "abilities": ["rain-dish", "torrent"],
+    "evolution": {
+      "name": "wartortle",
+      "level": 16
+    },
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+    "id": 7
+  },
+  {
+    "name": "wartortle",
+    "hitPoints": 59,
+    "attack": 63,
+    "defense": 80,
+    "description": "It is said to live 10,000 years. Its furry tail is popular as a symbol of longevity.",
+    "abilities": ["rain-dish", "torrent"],
+    "evolution": {
+      "name": "blastoise",
+      "level": 36
+    },
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+    "id": 8
+  },
+  {
+    "name": "blastoise",
+    "hitPoints": 79,
+    "attack": 83,
+    "defense": 100,
+    "description": "The jets of water it spouts from the rocket cannons on its shell can punch through thick steel.",
+    "abilities": ["rain-dish", "torrent"],
+    "evolution": {},
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+    "id": 9
+  }
+]
