@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Intergalactic",
+    "artist": "Beastie Boys",
+    "album": "Hello Nasty",
+    "releaseYear": 1998,
+    "genre": ["rap", "hip-hop", "rock"]
+  },
+  {
+    "title": "Too legit to quit",
+    "artist": "MC Hammer",
+    "releaseYear": 1991,
+    "album": "Too legit to quit",
+    "genre": ["rap", "hip-hop"],
+    "id": 4
+  },
+  {
+    "id": 5,
+    "title": "Never had a dream come true",
+    "artist": "SClub7",
+    "releaseYear": 2000,
+    "album": "Sunshine",
+    "genre": ["pop", "dance", "soul"]
+  },
+  {
+    "id": 6,
+    "title": "Wonderwall",
+    "artist": "Oasis",
+    "releaseYear": "1995",
+    "album": "(What's the Story) Morning Glory?",
+    "genre": ["Britpop", "Alternative Rock", "Rock"]
+  },
+  {
+    "id": 7,
+    "title": "Creep",
+    "artist": "Radiohead",
+    "releaseYear": "1992",
+    "album": "Pablo Honey",
+    "genre": ["Alternative Rock", "Grunge", "Rock"]
+  },
+  {
+    "id": 8,
+    "title": "I Will Always Love You",
+    "artist": "Whitney Houston",
+    "releaseYear": "1992",
+    "album": "The Bodyguard: Original Soundtrack Album",
+    "genre": ["Pop", "R&B", "Soul"]
+  },
+  {
+    "id": 9,
+    "title": "Smells Like Teen Spirit",
+    "artist": "Nirvana",
+    "releaseYear": "1991",
+    "album": "Nevermind",
+    "genre": ["Grunge", "Alternative Rock", "Hard Rock"]
+  },
+  {
+    "id": 10,
+    "title": "No Scrubs",
+    "artist": "TLC",
+    "releaseYear": "1999",
+    "album": "FanMail",
+    "genre": ["R&B", "Hip Hop", "Pop"]
+  }
+]
