@@ -45,7 +45,7 @@
     "artist": "Whitney Houston",
     "releaseYear": "1992",
     "album": "The Bodyguard: Original Soundtrack Album",
-    "genre": ["Pop", "R&B", "Soul"]
+    "genre": ["Pop", "R&B", "Soul", "test"]
   },
   {
     "id": 9,
@@ -61,6 +61,6 @@
     "artist": "TLC",
     "releaseYear": "1999",
     "album": "FanMail",
-    "genre": ["R&B", "Hip Hop", "Pop"]
+    "genre": ["R&B", "Hip Hop", "Pop", "test"]
   }
 ]
