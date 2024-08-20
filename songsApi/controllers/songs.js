@@ -31,26 +31,11 @@ router.get("/search", (req, res) => {
   const genres = req.query.genre.split(",")
   const songs = getJSON()
 
-  // TODO: extra point on any assignment for whoever solves this
-  // goal: return any song that includes ALL comma separated genres from query
-  // localhost:4000/search?genre=rap,hip-hop
   const matches = songs.filter((s) => {
     const lowerCaseGenres = s.genre.map((g) => g.toLowerCase())
-    return genres.every((g) => {
-      console.log(g)
-      lowerCaseGenres.includes(g)
-    })
+    return genres.every((g) => lowerCaseGenres.includes(g))
   })
   res.send(matches)
-
-  // This is the working version for a single genre search
-  // const genre = req.query.genre
-  // const songs = getJSON()
-  // const matches = songs.filter((s) => {
-  //   const lowerCaseGenres = s.genre.map((g) => g.toLowerCase())
-  //   return lowerCaseGenres.includes(genre)
-  // })
-  // res.send(matches)
 })
 
 const getNewId = () => {
