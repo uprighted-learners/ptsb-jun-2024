@@ -31,7 +31,6 @@ router.get("/", async (req, res) => {
 
 router.get("/find/:bookId", async (req, res) => {
   if (ObjectId.isValid(req.params.bookId)) {
-    const connect = await dbConnect()
     // query the db to find the matching id
     const book = await connect.findOne({ _id: new ObjectId(req.params.bookId) })
     // ternary operator
