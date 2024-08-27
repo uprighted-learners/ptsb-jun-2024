@@ -8,10 +8,12 @@ const PORT = process.env.PORT
 
 // import router
 const songRouter = require("./controllers/songs")
+const authRouther = require("./controllers/users")
 
 // middlewares
 app.use(express.json())
-app.use(songRouter)
+app.use("/api", songRouter)
+app.use("/auth", authRouther)
 
 app.listen(PORT, () => {
   dbConnect()
