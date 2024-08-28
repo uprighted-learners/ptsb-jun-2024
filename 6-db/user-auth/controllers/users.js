@@ -1,6 +1,9 @@
 const router = require("express").Router()
 const User = require("../model/User")
 const bcrypt = require("bcrypt")
+const jwt = require("jsonwebtoken")
+
+const JWT_KEY = process.env.JWT_KEY
 
 router.post("/register", async (req, res) => {
   try {
@@ -18,7 +21,6 @@ router.post("/register", async (req, res) => {
   }
 })
 
-// TODO: login endpoint
 router.post("/login", async (req, res) => {
   try {
     const { username, password } = req.body
@@ -27,10 +29,12 @@ router.post("/login", async (req, res) => {
       res.send("unknown username")
     } else {
       const verified = await bcrypt.compare(password, user.password)
-      verified ? res.send("logged in ") : res.send("incorrect password")
-
       if (verified) {
-        res.send("logged in")
+        // TODO: add token expiration
+        const token = jwt.sign({ id: user._id }, JWT_KEY, {
+          expiresIn: 60 * 60 * 24,
+        })
+        res.json({ message: "logged in", user, token })
       } else {
         res.send("incorrect password")
       }
