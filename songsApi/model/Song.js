@@ -22,6 +22,7 @@ const Song = new mongoose.Schema({
     max: new Date().getFullYear() + 1,
   },
   genre: [String],
+  updatedBy: mongoose.Schema.Types.ObjectId,
 })
 
 module.exports = mongoose.model("songs", Song)

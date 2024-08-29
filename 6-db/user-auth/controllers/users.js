@@ -30,7 +30,6 @@ router.post("/login", async (req, res) => {
     } else {
       const verified = await bcrypt.compare(password, user.password)
       if (verified) {
-        // TODO: add token expiration
         const token = jwt.sign({ id: user._id }, JWT_KEY, {
           expiresIn: 60 * 60 * 24,
         })

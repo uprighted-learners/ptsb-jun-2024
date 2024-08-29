@@ -1,5 +1,6 @@
 const express = require("express")
 const router = express.Router()
+const tokenValidation = require("../middlewares/tokenValidation")
 
 const Song = require("../model/Song")
 
@@ -10,7 +11,8 @@ router.get("/", async (req, res) => {
 })
 
 // get song by id
-router.get("/catalog/:songId", async (req, res) => {
+router.get("/catalog/:songId", tokenValidation, async (req, res) => {
+  // TODO: catch errors
   const songId = req.params.songId
   const song = await Song.findOne({ _id: songId })
   res.send(song)
@@ -28,27 +30,13 @@ router.get("/catalog/:songId", async (req, res) => {
 //   res.send(matches)
 // })
 
-// const getNewId = () => {
-//   const songs = getJSON()
-//   const lastSong = songs[songs.length - 1]
-//   return lastSong.id + 1
-// }
-
-// // post
-// router.post("/add", (req, res) => {
-//   const songs = getJSON()
-//   const newSong = {
-//     id: getNewId(),
-//     title: req.body.title || "untitled",
-//     artist: req.body.artist || "unknown artist",
-//     releaseYear: req.body.releaseYear || "unknown",
-//     album: req.body.album || "single",
-//     genre: req.body.genre || [],
-//   }
-//   songs.push(newSong)
-//   fs.writeFileSync(SONGS_PATH, JSON.stringify(songs))
-//   res.send("song added")
-// })
+router.post("/add", tokenValidation, async (req, res) => {
+  // TODO: catch errors
+  const newSong = new Song(req.body)
+  newSong.updatedBy = req.userId
+  await newSong.save()
+  res.send("song added")
+})
 
 // router.put("/update/:songId", (req, res) => {
 //   const songId = req.params.songId
