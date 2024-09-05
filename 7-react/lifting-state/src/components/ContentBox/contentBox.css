@@ -1,0 +1,7 @@
+.content-box {
+  border: 3px solid navy;
+  background-color: lightblue;
+  padding: 1rem;
+  margin: 1rem;
+  width: 15rem;
+}
