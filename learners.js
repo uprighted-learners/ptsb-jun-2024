@@ -1,18 +1,14 @@
 const students = [
-    "Adeyemi",
-    "Rey",
-    "Unique",
-    "Chris",
-    "Tanner",
-    "Betty",
-    "Lucy",
-    "Samuel",
-    "Aaron",
-    "Ricardo",
-    "Jasmine",
-    "John",
-    "Urmi",
-    "Paulo",
+  "Adeyemi",
+  "Rey",
+  "Unique",
+  "Tanner",
+  "Lucy",
+  "Samuel",
+  "Aaron",
+  "Ricardo",
+  "John",
+  "Paulo",
 ]
 
 let index = Math.floor(Math.random() * students.length)
