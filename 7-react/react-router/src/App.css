@@ -1,0 +1,70 @@
+header {
+  height: 3rem;
+  background-color: #7c599e;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 2em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  gap: 1rem;
+}
+
+#links {
+  display: flex;
+  gap: 1rem;
+}
+
+header a {
+  color: #b9afc3;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+header .active {
+  color: #fff;
+}
+
+#portfolio-window {
+  width: 80vw;
+  height: 80vw;
+  border: 5px solid black;
+  margin-left: 2rem;
+}
+
+.ColorPickerPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#color-display {
+  height: 20rem;
+  width: 20rem;
+  margin-top: 3rem;
+  border: 3px solid black;
+}
+
+.Pokedex {
+  background-color: #ffde00;
+}
+
+#portfolio-tabs {
+  font-size: 1.5rem;
+}
+
+#portfolio-tabs a {
+  text-decoration: none;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #7c599e;
+}
+
+#portfolio-tabs .active {
+  color: #fff;
+}
+
+#oops {
+  height: 80vh;
+}
