@@ -1,0 +1,9 @@
+.song-card {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid navy;
+}
+
+.song-card .title {
+  font-weight: 900;
+}
