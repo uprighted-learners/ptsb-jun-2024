@@ -14,10 +14,10 @@ router.post("/register", async (req, res) => {
       password: bcrypt.hashSync(password, SALT),
     })
     await user.save()
-    res.status(201).send(`created user ${user.username}`)
+    res.status(201).send({ message: `created user ${user.username}` })
   } catch (err) {
     console.log(err)
-    res.status(500).send(`server error: ${err}`)
+    res.status(500).send({ message: `server error: ${err}` })
   }
 })
 
@@ -37,14 +37,14 @@ router.post("/login", async (req, res) => {
           token,
         })
       } else {
-        res.send("incorrect password")
+        res.send({ message: "incorrect password" })
       }
     } else {
-      res.send("invalid username")
+      res.send({ message: "invalid username" })
     }
   } catch (err) {
     console.log(err)
-    res.status(500).send(`server error: ${err}`)
+    res.status(500).send({ message: `server error: ${err}` })
   }
 })
 

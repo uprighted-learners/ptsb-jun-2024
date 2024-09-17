@@ -1,0 +1,13 @@
+.auth-inputs {
+  display: flex;
+  flex-direction: column;
+  width: 12rem;
+  padding: 3rem;
+  gap: 1rem;
+}
+
+.auth-warning {
+  color: #e11818;
+  font-weight: 900;
+  align-self: center;
+}
