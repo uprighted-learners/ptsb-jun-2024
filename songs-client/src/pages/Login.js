@@ -1,12 +1,19 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import Auth from "../components/Auth"
+import { UserContext } from "../App"
 
 function Login() {
   const [errorMessage, setErrorMessage] = useState("")
 
+  const { user, setUser } = useContext(UserContext)
+
   const handleToken = (data) => {
     if (data.token) {
-      // TODO: save token cookie
+      // TODO: cookies!
+      const newUser = data.user
+      newUser.token = data.token
+      setUser(newUser)
+      console.log(data)
     } else {
       setErrorMessage(data.message)
     }

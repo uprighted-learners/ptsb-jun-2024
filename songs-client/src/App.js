@@ -1,5 +1,6 @@
 import "./App.css"
 
+import { createContext, useState } from "react"
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -24,8 +25,16 @@ const router = createBrowserRouter(
   )
 )
 
+export const UserContext = createContext()
+
 function App() {
-  return <RouterProvider router={router} />
+  const [user, setUser] = useState({})
+
+  return (
+    <UserContext.Provider value={{ user, setUser }}>
+      <RouterProvider router={router} />
+    </UserContext.Provider>
+  )
 }
 
 export default App

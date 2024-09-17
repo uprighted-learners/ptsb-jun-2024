@@ -31,6 +31,7 @@ function Auth({ url, handleToken, errorMessage }) {
         onChange={(e) => setPassword(e.target.value)}
       />
       <button className="auth-button" onClick={handleLogin}>
+        {/* TODO: conditional formatting */}
         Log In
       </button>
       <p className="auth-warning">{errorMessage}</p>
