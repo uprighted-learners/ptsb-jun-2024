@@ -1,5 +1,6 @@
 import "./App.css"
 
+import { createContext, useState } from "react"
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -9,21 +10,31 @@ import {
 
 import AppLayout from "./layouts/AppLayout"
 import Search from "./pages/Search"
+import Login from "./pages/Login"
+import Register from "./pages/Register"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<AppLayout />}>
       <Route path="/" element={<Search />} />
-      <Route path="login" />
-      <Route path="register" />
+      <Route path="login" element={<Login />} />
+      <Route path="register" element={<Register />} />
       <Route path="update" />
       <Route path="add" />
     </Route>
   )
 )
 
+export const UserContext = createContext()
+
 function App() {
-  return <RouterProvider router={router} />
+  const [user, setUser] = useState({})
+
+  return (
+    <UserContext.Provider value={{ user, setUser }}>
+      <RouterProvider router={router} />
+    </UserContext.Provider>
+  )
 }
 
 export default App
