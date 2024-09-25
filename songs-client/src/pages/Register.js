@@ -5,7 +5,6 @@ import { UserContext } from "../App"
 
 function Register() {
   // TODO: how do we get here?
-
   const [errorMessage, setErrorMessage] = useState("")
   const nav = useNavigate()
 
@@ -28,6 +27,7 @@ function Register() {
       url="http://localhost:4000/auth/register"
       handleToken={handleToken}
       errorMessage={errorMessage}
+      label="Sign Up Now"
     />
   )
 }

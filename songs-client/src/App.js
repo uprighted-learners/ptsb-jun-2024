@@ -12,6 +12,7 @@ import AppLayout from "./layouts/AppLayout"
 import Search from "./pages/Search"
 import Login from "./pages/Login"
 import Register from "./pages/Register"
+import Detail from "./pages/Detail"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
       <Route path="/" element={<Search />} />
       <Route path="login" element={<Login />} />
       <Route path="register" element={<Register />} />
+      <Route path="detail/:songId" element={<Detail />} />
       <Route path="update" />
       <Route path="add" />
     </Route>

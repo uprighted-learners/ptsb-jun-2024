@@ -1,4 +1,5 @@
 import { useContext, useState } from "react"
+import { NavLink } from "react-router-dom"
 import Auth from "../components/Auth"
 import { UserContext } from "../App"
 
@@ -20,11 +21,15 @@ function Login() {
   }
 
   return (
-    <Auth
-      url="http://localhost:4000/auth/login"
-      handleToken={handleToken}
-      errorMessage={errorMessage}
-    />
+    <>
+      <Auth
+        url="http://localhost:4000/auth/login"
+        handleToken={handleToken}
+        errorMessage={errorMessage}
+        label="Log In"
+      />
+      <NavLink to="/register">No account? Sign up now</NavLink>
+    </>
   )
 }
 

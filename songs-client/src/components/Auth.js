@@ -1,7 +1,7 @@
 import "./auth.css"
 import { useState } from "react"
 
-function Auth({ url, handleToken, errorMessage }) {
+function Auth({ url, handleToken, errorMessage, label }) {
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
 
@@ -31,8 +31,7 @@ function Auth({ url, handleToken, errorMessage }) {
         onChange={(e) => setPassword(e.target.value)}
       />
       <button className="auth-button" onClick={handleLogin}>
-        {/* TODO: conditional formatting */}
-        Log In
+        {label}
       </button>
       <p className="auth-warning">{errorMessage}</p>
     </div>
